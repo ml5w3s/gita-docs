@@ -1,3 +1,6 @@
+# gita-docs
+Documentação de software de gerenciamento para orquestrador kubernetes
+
 # Documentação do GITA
 
 Este docuemtno servirá como base para criar a documentação de usuário do GITA
@@ -16,6 +19,26 @@ Este é um exemplo de visão de Organização:  ![ visão do dashboard de um Clu
 Este é um exemplo de visão de dashboard de um Cluster:
 
 ![alt text](image.png)
+
+|Dashboard
+|
+|Timeline
+|
+|Health
+|____
+|   |Cluster Events
+|   |
+|   |Alerts
+|   |____
+|   |    |Open
+|   |    |
+|   |    |Closed
+|   |
+|   |Incidents
+|   |____
+|   |    |Open
+|   |    |
+|   |    |Closed
 
 ## Dashboard
 
@@ -79,12 +102,12 @@ A Timeline do Gita apresenta o histórico completo de eventos e ações realizad
 
 ## Health
 
-As informações sobre a saúde do sistema e dos clusters monitorados incluem verificações detalhadas do estado do sistema, abrangendo eventos, alertas e incidentes. Essas verificações avaliam a integridade dos clusters e das cargas de trabalho (workloads), classificando os dados em categorias específicas para facilitar o monitoramento e a análise.
+    As informações sobre a saúde do sistema e dos clusters monitorados incluem verificações detalhadas do estado do sistema, abrangendo eventos, alertas e incidentes. Essas verificações avaliam a integridade dos clusters e das cargas de trabalho (workloads), classificando os dados em categorias específicas para facilitar o monitoramento e a análise.
 
 ### Cluster Events
 
-Exibe todos os eventos ocorridos no cluster em tempo real ou histórico.
-Exemplo de Uso: Monitorar mudanças, falhas ou ações administrativas dentro dos clusters.
+    Exibe todos os eventos ocorridos no cluster em tempo real ou histórico.
+    Exemplo de Uso: Monitorar mudanças, falhas ou ações administrativas dentro dos clusters.
 
 ### Submenus de Health
 
@@ -99,6 +122,22 @@ Exemplo de Uso: Monitorar mudanças, falhas ou ações administrativas dentro do
         **Exemplo de Uso:** Priorizar esforços para solucionar falhas atuais.
 - **Closed**: Incidentes resolvidos. Armazena incidentes resolvidos ou encerrados.
         **Exemplo de Uso:** Fornece um histórico para auditoria e análise de causa raiz.
+
+|Misconfigurations
+|____
+|   |Segurity
+|   |
+|   |Alerts
+|   |____
+|   |    |Open
+|   |    |
+|   |    |Closed
+|   |
+|   |Problem
+|   |____
+|   |    |Open
+|   |    |
+|   |    |Closed
 
 ## Estrutura do Menu - Misconfigurations
 
@@ -128,6 +167,48 @@ O monitoramento e gerenciamento de configurações incorretas ou vulneráveis id
 - **Análise Preventiva:** Use dados de problemas fechados para prevenir erros futuros.
 
 Essa seção promove um ambiente Kubernetes mais seguro e resiliente.
+
+|Inventory
+|____
+|   |Nodes
+|   |
+|   |Namespace
+|   |
+|   |Workload
+|   |____
+|   |    |Pods
+|   |    |
+|   |    |Pods Status
+|   |    |
+|   |    |Deployment
+|   |    |
+|   |    |Replicaset
+|   |    |
+|   |    |Statefulset
+|   |    |
+|   |    |Daemonset
+|   |    |
+|   |    |Cronjob
+|   |    |
+|   |    |Job
+|   |
+|   |Service Discovery
+|   |____
+|   |    |Ingress
+|   |    |
+|   |    |Service
+|   |
+|   |Storage
+|   |____
+|   |    |PV
+|   |    |
+|   |    |PVC
+|   |    |
+|   |    |Storage Classes
+|   |    |
+|   |    |ConfigMaps
+|   |    |
+|   |    |Secrets
 
 ## Estrutura do Menu - Inventory
 
@@ -166,6 +247,18 @@ Service, Gerencia a comunicação entre os componentes do cluster.
     Gerencie Dados com Segurança: Configure Secrets e PVCs para proteger e persistir dados críticos.
 
 Essa seção permite controle total sobre os recursos do cluster, garantindo eficiência e organização.
+
+|Configuration
+|____
+|    |Rules
+|    |
+|    |Installation
+|    |
+|    |Users
+|    |
+|    |Notifications
+|    |
+|    |Settings
 
 ## Estrutura do Menu - Configuration
 
