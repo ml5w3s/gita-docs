@@ -13,10 +13,6 @@ Existem duas entidades no GITA, que são: Organização e Cluster. Uma Organiza�
 
 Este é um exemplo de visão de Organização:  ![ visão do dashboard de um Cluster](./imagens/img_01.png)
 
-Este é um exemplo de visão de dashboard de um Cluster:
-
-![alt text](image.png)
-
 ## Dashboard
 
 A visão geral do sistema, com métricas e status consolidados.
